@@ -1,0 +1,33 @@
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = E203, W503
+
+[tool.mypy]
+python_version = 3.11
+ignore_missing_imports = true
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "acme-package-registry"
+version = "0.1.0"
+dependencies = [
+    "typer[all]",
+    "pydantic",
+    "huggingface_hub",
+    "GitPython",
+    "pytest",
+    "pytest-cov",
+    "black",
+    "isort",
+    "flake8",
+    "mypy"
+]

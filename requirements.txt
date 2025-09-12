@@ -1,0 +1,10 @@
+typer[all]
+pydantic
+huggingface_hub
+GitPython
+pytest
+pytest-cov
+black
+isort
+flake8
+mypy
